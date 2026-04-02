@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Primavera alérgica en España</title>
-   <!-- Tipografías -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter&display=swap" rel="stylesheet">
+  <!-- Tipografías -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter&display=swap"
+    rel="stylesheet">
   <link rel="icon" type="image/png" href="https://umap.openstreetmap.fr/static/img/favicon.png">
   <style>
     /* ----------- ESTILOS BASE ----------- */
@@ -24,7 +26,9 @@
       line-height: 1.6;
       overflow-x: hidden;
     }
-    h1, h2 {
+
+    h1,
+    h2 {
       font-family: 'Playfair Display', serif;
     }
 
@@ -34,21 +38,19 @@
       background-color: #6F905D;
       color: white;
       height: 100vh;
-      background-image: linear-gradient(
-        rgba(0,0,0,0.4),
-        rgba(0,0,0,0.4)
-      ),
-      url('https://images.pexels.com/photos/36375698/pexels-photo-36375698.jpeg');
+      background-image: linear-gradient(rgba(0, 0, 0, 0.4),
+          rgba(0, 0, 0, 0.4)),
+        url('https://images.pexels.com/photos/36375698/pexels-photo-36375698.jpeg');
       background-size: cover;
       background-position: center;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-    
+
       text-align: center;
     }
-    
+
 
     header h1 {
       font-size: 3rem;
@@ -62,19 +64,26 @@
     }
 
     /* Animación de aparición suave */
-@keyframes reveal {
-  from { opacity: 0; transform: translateY(30px); }
-  to { opacity: 1; transform: translateY(0); }
-}
+    @keyframes reveal {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
 
-.chapter {
-  animation: reveal linear both;
-  animation-timeline: view();
-  animation-range: entry 10% cover 30%;
-}
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .chapter {
+      animation: reveal linear both;
+      animation-timeline: view();
+      animation-range: entry 10% cover 30%;
+    }
 
     /* ----------- CAPÍTULOS ----------- */
-    
+
     main {
       display: flex;
       flex-direction: column;
@@ -89,7 +98,7 @@
       margin: 3rem auto;
       padding: 2rem;
       background-color: var(--chapter-bg);
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
       border-radius: 16px;
       transition: transform 0.3s ease, opacity 0.3s ease;
     }
@@ -119,7 +128,7 @@
       height: 600px;
       border: none;
       border-radius: 12px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
     }
 
     footer {
@@ -138,12 +147,22 @@
 
     /* ----------- RESPONSIVE ----------- */
     @media (max-width: 700px) {
-      header h1 { font-size: 1.8rem; }
-      .chapter { margin: 2rem 1rem; padding: 1.5rem; }
-      .map-frame { height: 360px; }
+      header h1 {
+        font-size: 1.8rem;
+      }
+
+      .chapter {
+        margin: 2rem 1rem;
+        padding: 1.5rem;
+      }
+
+      .map-frame {
+        height: 360px;
+      }
     }
   </style>
 </head>
+
 <body>
 
   <header>
@@ -157,56 +176,63 @@
     <section class="chapter">
       <h2>Un fenómeno en expansión</h2>
       <img src="https://images.pexels.com/photos/4031632/pexels-photo-4031632.jpeg">
-      <p>Cada primavera, millones de personas sufren alergia al polen en España. La intensidad y el tipo de polen varían según el territorio, el clima y la vegetación.</p>
+      <p>Cada primavera, millones de personas sufren alergia al polen en España. La intensidad y el tipo de polen varían
+        según el territorio, el clima y la vegetación.</p>
 
-      </section>
+    </section>
 
     <!-- 🔹 CAPÍTULO 2 -->
     <section class="chapter">
       <h2>Una temporada cada vez más larga</h2>
-      <img src="https://images.unsplash.com/reserve/yra1GBrGTB65qtZpFaly_day%202.jpg?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Imagen descriptiva del capítulo 2">
-      <p>En las últimas décadas, la temporada de polen se ha adelantado y prolongado, en parte debido al cambio climático.</p>
-      <img src="TU_GRAFICO_1.png" alt="Imagen gráfico del polen y el cambio climático" >
+      <p>La temporada de poen se alarga cada año</p>
+      <img
+        src="https://images.unsplash.com/reserve/yra1GBrGTB65qtZpFaly_day%202.jpg?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt="Imagen descriptiva del capítulo 2">
+      <p>La duración de la temporada de polen ha aumentado en las últimas décadas, impulsada por el incremento de
+        temperaturas y los cambios en los ciclos de floración.</p>
+      <img src="assets/grafico-linea-temporal.png" alt="Imagen gráfico del polen y el cambio climático">
+      <p>Fuentes: Climate - ADAPT. COPE</p>
 
     </section>
 
-       <!-- 🔹 CAPÍTULO 3 -->
+    <!-- 🔹 CAPÍTULO 3 -->
     <section class="chapter">
       <h1>El mapa del polen en España</h1>
-      
+
       <img src="https://images.pexels.com/photos/4946875/pexels-photo-4946875.jpeg">
-      <p>Este mapa permite explorar cómo la distribucióndel polen varía en España según el territorio, el clima y el tipo de vegetación.</p>
+      <p>Este mapa permite explorar cómo la distribucióndel polen varía en España según el territorio, el clima y el
+        tipo de vegetación.</p>
 
       <iframe class="map-frame"
         src="https://umap.openstreetmap.fr/es/map/mapa-de-riesgo-alergico-primavera-2026_1378883?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&editMode=disabled&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=none&captionBar=false&captionMenus=true&feature=Zaragoza%3A%20gram%C3%ADneas%20y%20viento#6/40.321420/-6.767578"
-        allowfullscreen
-        loading="lazy">
+        allowfullscreen loading="lazy">
       </iframe>
     </section>
 
     <!-- 🔹 CAPÍTULO 4 -->
     <section class="chapter">
-    <h2>El olivo</h2>
+      <h2>El olivo</h2>
       <img src="https://images.pexels.com/photos/4946875/pexels-photo-4946875.jpeg">
-      <p>El olivo (Olea europaea) es el principal motor alérgico del sur peninsular, donde sus extensos monocultivos generan concentraciones de polen extremas durante los meses de mayo y junio. Su impacto clínico es tan elevado que marca el ritmo de vida y la salud pública en provincias como Jaén y Córdoba./p>
+      <p>El olivo (Olea europaea) es el principal motor alérgico del sur peninsular, donde sus extensos monocultivos
+        generan concentraciones de polen extremas durante los meses de mayo y junio. Su impacto clínico es tan elevado
+        que marca el ritmo de vida y la salud pública en provincias como Jaén y Córdoba.</p>
 
-      <iframe class="map-frame"
-        src="https://umap.openstreetmap.fr/es/map/mapa-de-riesgo-alergico-primavera-2026_1378883?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&editMode=disabled&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=none&captionBar=false&captionMenus=true&feature=Ja%C3%A9n.%20Alta%20concentraci%C3%B3n%20de%20olivo.#9/37.865097/-3.710632"
-        allowfullscreen
-        loading="lazy">
-      </iframe>
+        <iframe class="map-frame"
+          src="https://umap.openstreetmap.fr/es/map/mapa-de-riesgo-alergico-primavera-2026_1378883?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&editMode=disabled&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=none&captionBar=false&captionMenus=true&feature=Ja%C3%A9n.%20Alta%20concentraci%C3%B3n%20de%20olivo.#9/37.865097/-3.710632"
+          allowfullscreen loading="lazy">
+        </iframe>
     </section>
 
     <!-- 🔹 CAPÍTULO 5 -->
     <section class="chapter">
       <h2>Platano de sombra</h2>
       <img src="https://images.pexels.com/photos/5696412/pexels-photo-5696412.jpeg">
-      <p>El plátano de sombra es uno de los principales responsables de alergias en las ciudades. Durante la primavera libera grandes cantidades de polen.</p>
+      <p>El plátano de sombra es uno de los principales responsables de alergias en las ciudades. Durante la primavera
+        libera grandes cantidades de polen.</p>
 
       <iframe class="map-frame"
         src="https://umap.openstreetmap.fr/es/map/mapa-de-riesgo-alergico-primavera-2026_1378883?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&editMode=disabled&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=none&captionBar=false&captionMenus=true&feature=Madrid.%20Pl%C3%A1tano%20de%20sombra.#9/40.744136/-3.655701"
-        allowfullscreen
-        loading="lazy">
+        allowfullscreen loading="lazy">
       </iframe>
     </section>
 
@@ -214,12 +240,12 @@
     <section class="chapter">
       <h2>Mediterráneo. Parietaria</h2>
       <img src="https://images.pexels.com/photos/1134371/pexels-photo-1134371.jpeg">
-      <p>La Parietaria es una de las malezas más persistentes del Mediterráneo, afectando a la población costera durante gran parte del año.</p>
+      <p>La Parietaria es una de las malezas más persistentes del Mediterráneo, afectando a la población costera durante
+        gran parte del año."</p>
 
       <iframe class="map-frame"
         src="https://umap.openstreetmap.fr/es/map/mapa-de-riesgo-alergico-primavera-2026_1378883?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&editMode=disabled&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=none&captionBar=false&captionMenus=true&feature=Valencia.%20Parietaria.#9/39.933960/-1.046448"
-        allowfullscreen
-        loading="lazy">
+        allowfullscreen loading="lazy">
       </iframe>
     </section>
 
@@ -231,8 +257,7 @@
 
       <iframe class="map-frame"
         src="https://umap.openstreetmap.fr/es/map/mapa-de-riesgo-alergico-primavera-2026_1378883?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&editMode=disabled&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=none&captionBar=false&captionMenus=true&feature=Bilbao.%20El%20bosque%20del%20Norte.#8/43.717520/-4.443970"
-        allowfullscreen
-        loading="lazy">
+        allowfullscreen loading="lazy">
       </iframe>
     </section>
 
@@ -240,38 +265,47 @@
     <section class="chapter">
       <h2>Gramíneas</h2>
       <img src="https://images.pexels.com/photos/699419/pexels-photo-699419.jpeg">
-      <p>El cierzo dispersa el polen de cereales y estepas a gran velocidad. Niveles explosivos en días de viento fuerte.</p>
+      <p>El cierzo dispersa el polen de cereales y estepas a gran velocidad. Niveles explosivos en días de viento
+        fuerte.</p>
 
       <iframe class="map-frame"
         src="https://umap.openstreetmap.fr/es/map/mapa-de-riesgo-alergico-primavera-2026_1378883?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&editMode=disabled&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=none&captionBar=false&captionMenus=true&feature=Zaragoza%3A%20gram%C3%ADneas%20y%20viento#9/41.921694/-1.175537"
-        allowfullscreen
-        loading="lazy">
+        allowfullscreen loading="lazy">
       </iframe>
     </section>
-        <!-- 🔹 CAPÍTULO 9 SACAR DATOS REALES DE ALGÚN SITIO Y HACER GRÁFICO DE PORCENTAJE DE POBLACIÓN CON ALEGIA QUE HA AUMENTADO CON LOS AÑOS. -->
+    <!-- 🔹 CAPÍTULO 9 SACAR DATOS REALES DE ALGÚN SITIO Y HACER GRÁFICO DE PORCENTAJE DE POBLACIÓN CON ALEGIA QUE HA AUMENTADO CON LOS AÑOS. -->
     <section class="chapter">
       <h2>Más personas afectadas</h2>
-      <img src="https://revista.dgt.es/images/Calendario-Alergias-2017.jpg">
-      <p>El porcentaje de población con alergias respiratorias ha aumentado en los últimos años, convirtiéndose en un problema de salud creciente.</p>
+         <p>Las alergias respiratorias han aumentado en las últimas décadas, afectando ya a cerca de una cuarta parte de la
+        población en España.</p>
+      <img src="assets/grafico-barras-porcentaje.png" alt="Imagen porcentaje alergias">
+      <p>Fuentes: Elaboración propia a partir de estudios científicos</p>
 
-      </section>
-          <!-- 🔹 CONCLUSIÓN SACAR DATOS REALES DE ALGÚN SITIO Y HACER GRÁFICO DE DISPERSIÓN QUE REFLEJA LA RELACIÓN ENTRE EL TERRITORIO Y LA SALUD.. -->
+    </section>
+    <!-- 🔹 CONCLUSIÓN-->
     <section class="chapter">
       <h1>Conclusión</h1>
       <h2>Territorio, clima y salud</h2>
       <img src="https://www.newtral.es/wp-content/uploads/2022/05/social_card-01-scaled.jpg">
-      <p>La distribución del polen refleja la relación entre el territorio y la salud. 
-      Visualizar estos patrones permite comprender mejor el impacto de factores ambientales en la vida cotidiana.</p>
+      <p>La distribución del polen refleja la relación entre el territorio y la salud.
+        Visualizar estos patrones permite comprender mejor el impacto de factores ambientales en la vida cotidiana.</p>
+      <img src="assets/grafico-mapa-burbujas.png" alt="Imagen porcentaje alergias">
+      <p>Fuentes: https://www.redespanoladeaerobiologia.com/</p>
 
-      </section>
 
-    
+
+    </section>
+
+
+
 
   </main>
 
   <footer>
-    <p>Creado con <a href="https://umap.openstreetmap.fr/es/" target="_blank">uMap</a> y HTML5 · Plantilla adaptable por <strong>María Ariza</strong> · © 2025</p>
+    <p>Creado con <a href="https://umap.openstreetmap.fr/es/" target="_blank">uMap</a> y HTML5 · Plantilla adaptable por
+      <strong>María Ariza</strong> · © 2025 Desafío 2 Marta Gómez Martínez</p>
   </footer>
 
 </body>
+
 </html>
